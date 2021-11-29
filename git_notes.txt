@@ -1,0 +1,19 @@
+--configuration
+git config -l
+git config --local user.name "Vladimir Ionescu"
+git config --local user.email "vlady.email@gmail.com"
+
+--help
+man git
+git help
+git help config
+
+--repo start
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vladyi74/gitSample.git
+git branch -M main
+git push -u origin main
+
