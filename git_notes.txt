@@ -17,3 +17,10 @@ git remote add origin https://github.com/vladyi74/gitSample.git
 git push -u origin main
 
 --porcelain commands (most used)
+git status
+git status -s		(response: status in stage/working area/file name)
+git add new_file.txt
+git diff --staged	(compare commited with stage area)
+git diff --staged --no-renames
+git diff			(compare stage area with working area)
+git diff HEAD		(compare commited with working area)
