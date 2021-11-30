@@ -56,6 +56,7 @@ git stash pop		(bring back changes)
 git checkout main
 git merge new_branch
 
+--reset should not be used if changes were propagated to remote repo
 git reset --soft		(move changes to staging area)
-git reset				(move changes to working area)
+git reset 88b2a45		(move changes to working area)
 git reset --hard		(delete changes)
