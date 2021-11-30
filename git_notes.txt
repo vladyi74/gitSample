@@ -19,8 +19,43 @@ git push -u origin main
 --porcelain commands (most used)
 git status
 git status -s		(response: status in stage/working area/file name)
+
 git add new_file.txt
+
 git diff --staged	(compare commited with stage area)
 git diff --staged --no-renames
 git diff			(compare stage area with working area)
 git diff HEAD		(compare commited with working area)
+
+git commit -a -m "new commands added"
+git push origin main
+
+git log -n			(n last commits)
+git log --oneline	(simplified view)
+git log --stat		(file modifications)
+git log --patch		(modification details)
+git log --no-merges main..origin/main --pretty=format:"%h - %ar : %s"
+		
+git rm <file>			(remove file completly)
+git rm --cached <file>	(untrack file; file not deleted)
+git mv <file> <new_file> (rename file)
+
+git checkout -b new_branch	(create a new branch and switch to it)
+git branch new_branch		(create a new branch)
+git checkout main			(switch to main branch)
+git checkout <commit-hash>	(switch to a previous commit)
+git branch -va				(list branches)
+git log --oneline --decorate --graph --all (to display all branches)
+
+git add .
+git stash 			(save working/staging area)
+git stash list
+git stash show
+git stash pop		(bring back changes)
+
+git checkout main
+git merge new_branch
+
+git reset --soft		(move changes to staging area)
+git reset				(move changes to working area)
+git reset --hard		(delete changes)
